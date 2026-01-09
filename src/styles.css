@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+.geo-regular {
+  font-family: "Geo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.geo-regular-italic {
+  font-family: "Geo", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+body {
+  @apply m-0;
+  font-family: "Geo", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @apply bg-site-secondary text-site-primary;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@theme {
+  /*--breakpoint-3xl: 120rem;*/
+  --color-site-secondary: #594A47;
+  --color-site-primary: #6CD9D0;
+  --color-site-accent: #DB8630;
+}
