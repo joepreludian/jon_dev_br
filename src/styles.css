@@ -13,17 +13,50 @@
 }
 
 body {
-  @apply m-0;
   font-family: "Geo", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   font-style: normal;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  @apply bg-site-secondary text-site-primary;
+  /* Disable the text highlight effect (for the CRT effect) */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  @apply bg-site-secondary text-site-primary m-0;
+}
+
+.crt-effect {
+  text-shadow: 0 0 10px var(--color-site-primary);
+}
+
+.crt-effect-box {
+  box-shadow: 0 0 10px var(--color-site-primary);
+}
+
+.crt-effect-disabled {
+  text-shadow: none;
+}
+
+.site-box {
+  @apply px-2 py-1 border-2 border-site-primary;
+  box-shadow: 0 0 10px var(--color-site-primary);
+  text-shadow: 0 0 10px var(--color-site-primary);
+}
+
+.header {
+  @apply text-4xl border-b-2 mb-8;
+}
+
+.site-box-bright {
+  @apply bg-site-primary text-site-secondary
 }
 
 code {
@@ -31,9 +64,13 @@ code {
     monospace;
 }
 
+a {
+  @apply text-site-accent;
+}
+
 @theme {
   /*--breakpoint-3xl: 120rem;*/
-  --color-site-secondary: #594A47;
-  --color-site-primary: #6CD9D0;
-  --color-site-accent: #DB8630;
+  --color-site-secondary: #151212;
+  --color-site-primary: #ff6a00;
+  --color-site-accent: rgb(239, 235, 44);
 }
