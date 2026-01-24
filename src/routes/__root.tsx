@@ -1,33 +1,37 @@
-import {Outlet, createRootRouteWithContext} from '@tanstack/react-router'
-import {TanStackRouterDevtoolsPanel} from '@tanstack/react-router-devtools'
-import {TanStackDevtools} from '@tanstack/react-devtools'
+import { Outlet, createRootRouteWithContext } from "@tanstack/react-router";
+import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
+import { TanStackDevtools } from "@tanstack/react-devtools";
 
-import TanStackQueryDevtools from '../integrations/tanstack-query/devtools'
+import TanStackQueryDevtools from "../integrations/tanstack-query/devtools";
 
-import type {QueryClient} from '@tanstack/react-query'
+import type { QueryClient } from "@tanstack/react-query";
 import Header from "@/components/Header.tsx";
+import Footer from "@/components/Footer.tsx";
+import PageNotFound from "@/routes/PageNotFound.tsx";
 
 interface MyRouterContext {
-    queryClient: QueryClient
+  queryClient: QueryClient;
 }
 
 export const Route = createRootRouteWithContext<MyRouterContext>()({
-    component: () => (
-        <>
-            <Header/>
-            <Outlet/>
-            <TanStackDevtools
-                config={{
-                    position: 'bottom-right',
-                }}
-                plugins={[
-                    {
-                        name: 'Tanstack Router',
-                        render: <TanStackRouterDevtoolsPanel/>,
-                    },
-                    TanStackQueryDevtools,
-                ]}
-            />
-        </>
-    ),
-})
+  component: () => (
+    <>
+      <Header />
+      <Outlet />
+      <TanStackDevtools
+        config={{
+          position: "bottom-right",
+        }}
+        plugins={[
+          {
+            name: "Tanstack Router",
+            render: <TanStackRouterDevtoolsPanel />,
+          },
+          TanStackQueryDevtools,
+        ]}
+      />
+      <Footer />
+    </>
+  ),
+  notFoundComponent: () => PageNotFound(),
+});

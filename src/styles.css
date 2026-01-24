@@ -13,8 +13,18 @@
 }
 
 body {
-  font-family: "Geo", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family:
+    "Geo",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
     sans-serif;
   font-style: normal;
   font-size: 24px;
@@ -56,7 +66,7 @@ body {
 }
 
 .site-box-bright {
-  @apply bg-site-primary text-site-secondary
+  @apply bg-site-primary text-site-secondary;
 }
 
 code {
@@ -64,8 +74,24 @@ code {
     monospace;
 }
 
+.is-a-button {
+  @apply text-site-primary hover:bg-site-accent hover:text-black transition-colors flex items-center gap-2 cursor-pointer px-2 py-1 border-2 border-site-primary;
+  box-shadow: 0 0 10px var(--color-site-primary);
+  text-shadow: 0 0 10px var(--color-site-primary);
+}
+
+.contains-text {
+  p {
+    @apply text-justify mb-2;
+  }
+}
+
 a {
-  @apply text-site-accent;
+  @apply text-site-accent cursor-pointer;
+
+  &:hover {
+    @apply text-site-accent/80;
+  }
 }
 
 @theme {
