@@ -67,7 +67,7 @@ function OpensourcePage() {
       </div>
       <div className="lg:flex-1">
         <h1 className="text-4xl mb-6">
-          <i className="hn hn-github"></i> Some projects
+          <i className="hn hn-programming"></i> Some projects
         </h1>
         <ul>
           {projectsList.map(({ name, description, link }) => (

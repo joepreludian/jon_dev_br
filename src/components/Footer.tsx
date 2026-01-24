@@ -6,7 +6,7 @@ export default function Footer() {
       </div>
       <div className="flex items-center gap-2">
         <i className="hn hn-globe-americas-solid"></i>{" "}
-        <span>jon.dev.br / 2026</span>
+        <span>jon.dev.br / AI Free content / 2026</span>
       </div>
     </div>
   );
