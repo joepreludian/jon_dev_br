@@ -54,7 +54,7 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-      <a href="/public/resume/resume.pdf" target="_blank" rel="noopener">
+      <a href="/resume/resume.pdf" target="_blank" rel="noopener">
         <div className="site-box site-box-bright lg:mt-0 mt-6">
           <div className="flex items-center gap-2">
             <i className="text-xl crt-effect hn hn-print-solid text-black" />
