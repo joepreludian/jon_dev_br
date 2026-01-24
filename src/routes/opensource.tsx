@@ -43,17 +43,14 @@ function OpensourcePage() {
         </p>
         <p>
           I mainly use this approach to contribute to the community and enhance
-          my skillset both technical and interpersonal.{" "}
-        </p>
-        <p>
-          You can check my GitHub for the contributions I made, but I would like
-          to highlight some points.
+          my skillset both technical and interpersonal.
         </p>
         <p>
           I assume I didn’t had too much time to work on it, because of family,
           social life and so on, but I hope to spare some time to include it
           into my working week.
         </p>
+        <p>Programming should be fun!</p>
         <a
           href="https://github.com/joepreludian"
           target="_blank"

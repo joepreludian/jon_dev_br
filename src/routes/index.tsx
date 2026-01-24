@@ -14,7 +14,7 @@ function IndexPage() {
           alt="Jon's Pic"
           className="rounded-lg mx-auto"
         />
-        <div className="mt-10 lg:mt-0 lg:flex-1 text-justify">
+        <div className="mt-10 lg:mt-0 lg:flex-1 text-justify contains-text">
           <p>
             I'm a software Engineer with more than 20 years of experience in
             Software development.
@@ -25,10 +25,12 @@ function IndexPage() {
           </p>
           <p className="mt-4">
             I worked as a Tech Lead, driving a team to enable a resilient mobile
-            app. Feel free to get in touch!{" "}
-            <i className="hn hn-thumbsup text-3xl" />{" "}
+            app that handles thousand of calls each day.
           </p>
-          <div className="mt-4 flex gap-4">
+          <p>
+            Feel free to get in touch! <i className="hn hn-thumbsup text-3xl" />{" "}
+          </p>
+          <div className="mt-4 flex gap-4 overflow-x-auto">
             <Button
               to="https://linkedin.com/in/joepreludian"
               target="_blank"
@@ -48,6 +50,10 @@ function IndexPage() {
             <Button to="https://blog.jon.dev.br/" target="_blank">
               <i className="text-xl crt-effect hn hn-edit" />
               <span>Blog</span>
+            </Button>
+            <Button to="https://mastodon.social/@jjrt" target="_blank">
+              <i className="text-xl crt-effect hn hn-mastodon" />
+              <span>@jjrt@mastodon.social</span>
             </Button>
           </div>
         </div>

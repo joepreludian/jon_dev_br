@@ -23,7 +23,7 @@ export default function Header() {
           <header>Fullstack Engineer | Pythoneer | Brazil</header>
         </div>
         <nav>
-          <ul className="flex gap-2 text-2xl mt-4 text-site-accent overflow-x-scroll text-nowrap">
+          <ul className="flex gap-2 text-2xl mt-4 text-site-accent overflow-x-auto text-nowrap">
             {links.map(({ name, href, icon }) => {
               return (
                 <li key={name}>
