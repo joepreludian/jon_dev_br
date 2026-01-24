@@ -26,6 +26,10 @@ I'm using pre-commit in order to check if all files looks good.
 
 For the CRT effect, I'm using a plug-in called; [vault66-crt-effect](https://github.com/mdombrov-33/vault66-crt-effect).
 
+## 📝 Notes
+
+- For the inner routes, we need to provide a fix to vercel that can be seen here: https://medium.com/today-i-solved/deploy-spa-with-react-router-to-vercel-d10a6b2bfde8
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
