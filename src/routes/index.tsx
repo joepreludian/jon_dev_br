@@ -32,6 +32,14 @@ function IndexPage() {
           </p>
           <div className="mt-4 flex gap-4 overflow-x-auto">
             <Button
+              to="https://blog.jon.dev.br/"
+              target="_blank"
+              className="site-box-bright font-bold"
+            >
+              <i className="text-xl hn hn-edit text-black" />
+              <span className="text-black">Blog</span>
+            </Button>
+            <Button
               to="https://linkedin.com/in/joepreludian"
               target="_blank"
               className="p-10"
@@ -46,10 +54,6 @@ function IndexPage() {
             >
               <i className="text-xl crt-effect hn hn-github" />
               <span>Github</span>
-            </Button>
-            <Button to="https://blog.jon.dev.br/" target="_blank">
-              <i className="text-xl crt-effect hn hn-edit" />
-              <span>Blog</span>
             </Button>
             <Button to="https://mastodon.social/@jjrt" target="_blank">
               <i className="text-xl crt-effect hn hn-mastodon" />
